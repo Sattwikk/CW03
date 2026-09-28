@@ -1,0 +1,47 @@
+/* lyrics.css — Exercise 4 external stylesheet */
+.lyrics-card .artist {
+  font-size: 14pt;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: moccasin;
+}
+
+.lyrics-card .song-title {
+  font-size: 14pt;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  color: khaki;
+}
+
+.lyrics-card .album {
+  font-size: 12pt;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  color: khaki;
+}
+
+.lyrics-card .year {
+  font-size: 12pt;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: ivory;
+}
+
+.lyrics-card .verse {
+  font-size: 14pt;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: gold;
+  margin-left: 2cm;
+  margin-right: 2cm;
+}
+
+.lyrics-card .chorus {
+  font-size: 14pt;
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: gold;
+  margin-left: 4cm;
+  margin-right: 4cm;
+}

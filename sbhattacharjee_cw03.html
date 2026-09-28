@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bhattacharjee_Sattwik_CW03 - CSS Foundations Lab</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lyrics.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <h1>CSS Foundations Lab</h1>
+    <p>Bhattacharjee, Sattwik — CW03</p>
+  </header>
+
+  <nav class="toc">
+    <h2>Table of Contents</h2>
+    <ul>
+      <li><a href="#assignment-info">Assignment Information</a></li>
+      <li><a href="#exercise1">Exercise 1 — External Style Sheet</a></li>
+      <li><a href="#exercise2">Exercise 2 — Debugging CSS</a></li>
+      <li><a href="#exercise3">Exercise 3 — Song Lyrics Styling</a></li>
+      <li><a href="#exercise4">Exercise 4 — External Stylesheet</a></li>
+      <li><a href="#exercise5">Exercise 5 — School Website Design</a></li>
+      <li><a href="#critical-thinking">Critical Thinking Lab</a></li>
+      <li><a href="#evidence">Evidence</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ASSIGNMENT INFORMATION -->
+
+    <section id="assignment-info" class="card">
+      <h2>Assignment Information</h2>
+
+      <p><strong>Student:</strong> Sattwik Bhattacharjee</p>
+      <p><strong>Course:</strong> Web Programming</p>
+      <p><strong>Assignment:</strong> CW 03 — CSS Foundations Lab</p>
+      <p><strong>Date:</strong> September 27, 2026</p>
+
+      <p>
+        <strong>Description:</strong>
+        This assignment demonstrates CSS fundamentals, debugging,
+        external stylesheets, responsive design, accessibility,
+        CSS architecture, and experimental CSS analysis.
+      </p>
+    </section>
+
+
+    <!-- EXERCISE 1 -->
+
+    <section id="exercise1" class="card">
+
+      <h2>Exercise 1 — External Style Sheet</h2>
+
+      <p>
+        This exercise demonstrates changing text color using an
+        external CSS stylesheet.
+      </p>
+
+      <p>
+        The stylesheet is linked in the HTML head using:
+        <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+      </p>
+
+      <p class="exercise1-example">
+        This paragraph demonstrates the external stylesheet text styling.
+      </p>
+
+      <h3>Explanation</h3>
+
+      <p>
+        The external stylesheet applies CSS rules to the page.
+        The body rule controls the general text color, font family,
+        and line spacing.
+      </p>
+
+    </section>
+
+
+    <!-- EXERCISE 2 -->
+
+    <section id="exercise2" class="card">
+
+      <h2>Exercise 2 — Debugging CSS</h2>
+
+      <p>
+        This exercise identifies three CSS issues, provides
+        corrections, and explains the changes.
+      </p>
+
+      <div class="debug-analysis">
+
+        <h3>My Debugging Analysis</h3>
+
+        <h4>Mistake 1 — Missing Semicolon</h4>
+
+        <p>
+          <strong>Original:</strong>
+          <code>color: red</code>
+        </p>
+
+        <p>
+          <strong>Correction:</strong>
+          <code>color: red;</code>
+        </p>
+
+        <p>
+          <strong>Explanation:</strong>
+          The declaration should normally end with a semicolon.
+          Using the semicolon consistently makes the CSS easier
+          to maintain and prevents problems when additional
+          declarations are added.
+        </p>
+
+
+        <h4>Mistake 2 — Color Declaration</h4>
+
+        <p>
+          <strong>Original:</strong>
+          <code>color: #ff0000;</code>
+        </p>
+
+        <p>
+          <strong>Correction:</strong>
+          <code>color: #8b0000;</code>
+        </p>
+
+        <p>
+          <strong>Explanation:</strong>
+          The corrected declaration uses a darker red that is
+          more consistent with the intended visual design.
+        </p>
+
+
+        <h4>Mistake 3 — Missing Semicolon</h4>
+
+        <p>
+          <strong>Original:</strong>
+          <code>box-sizing: border-box</code>
+        </p>
+
+        <p>
+          <strong>Correction:</strong>
+          <code>box-sizing: border-box;</code>
+        </p>
+
+        <p>
+          <strong>Explanation:</strong>
+          The declaration should end with a semicolon so the CSS
+          syntax remains consistent and maintainable.
+        </p>
+
+      </div>
+
+      <h3>Corrected CSS</h3>
+
+      <pre><code>body {
+    font-family: "Times New Roman", serif;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
+    background: ivory;
+    color: #8b0000;
+}
+
+h1, h2, h3 {
+    color: #8b0000;
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+a {
+    color: #0000FF;
+    text-decoration: underline;
+}</code></pre>
+
+    </section>
+
+
+    <!-- EXERCISE 3 -->
+
+    <section id="exercise3" class="card lyrics-card">
+
+      <h2>Exercise 3 — Song Lyrics Styling</h2>
+
+      <div class="lyrics">
+
+        <h1 class="song-title">Blinding Lights</h1>
+
+        <h2 class="artist">The Weeknd</h2>
+
+        <h3 class="album">After Hours</h3>
+
+        <p class="year">2020</p>
+
+        <p class="verse">
+          I been tryna call, I been on my own for long enough<br>
+          Maybe you can show me how to love, maybe
+        </p>
+
+        <p class="chorus">
+          I'm going through a crisis, I thought I'd see the light<br>
+          But there's nothing but blinding lights
+        </p>
+
+        <p class="verse">
+          I'm looking for something that I can't see<br>
+          Maybe you can show it to me, maybe
+        </p>
+
+        <p class="chorus">
+          I'm going through a crisis, I thought I'd see the light<br>
+          But there's nothing but blinding lights
+        </p>
+
+      </div>
+
+      <h3>CSS Classes Used</h3>
+
+      <ul>
+        <li><strong>.artist</strong> — 14pt Arial, bold, moccasin</li>
+        <li><strong>.song-title</strong> — 14pt Arial, normal, khaki</li>
+        <li><strong>.album</strong> — 12pt Arial, normal, khaki</li>
+        <li><strong>.year</strong> — 12pt Arial, bold, ivory</li>
+        <li><strong>.verse</strong> — 14pt Trebuchet MS, bold, gold</li>
+        <li><strong>.chorus</strong> — 14pt Trebuchet MS, bold italic, gold</li>
+      </ul>
+
+    </section>
+
+
+    <!-- EXERCISE 4 -->
+
+    <section id="exercise4" class="card">
+
+      <h2>Exercise 4 — External Stylesheet Creation</h2>
+
+      <p>
+        The song lyrics styling is separated into the external
+        stylesheet <code>lyrics.css</code>.
+      </p>
+
+      <p>
+        The stylesheet is connected to this HTML document using:
+      </p>
+
+      <pre><code>&lt;link rel="stylesheet" href="lyrics.css"&gt;</code></pre>
+
+      <h3>Why External CSS?</h3>
+
+      <p>
+        External CSS separates presentation from content.
+        This keeps the HTML cleaner and allows the same styles
+        to be reused across multiple pages.
+      </p>
+
+    </section>
+
+
+    <!-- EXERCISE 5 -->
+
+    <section id="exercise5" class="card">
+
+      <h2>Exercise 5 — School Website Design</h2>
+
+      <p>
+        This section demonstrates a school timetable using
+        semantic HTML, CSS variables, an HTML table, activity
+        classes, and responsive styling.
+      </p>
+
+      <div class="school-timetable">
+
+        <h3>Georgia State University — Weekly Timetable</h3>
+
+        <table>
+
+          <caption>Weekly Class Schedule</caption>
+
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <th>9:00 AM</th>
+
+              <td class="lecture">
+                <strong>LECTURE</strong><br>
+                Web Programming
+              </td>
+
+              <td></td>
+
+              <td class="lecture">
+                <strong>LECTURE</strong><br>
+                Web Programming
+              </td>
+
+              <td></td>
+
+              <td class="lab">
+                <strong>LAB</strong><br>
+                Computer Lab
+              </td>
+            </tr>
+
+            <tr>
+              <th>11:00 AM</th>
+
+              <td></td>
+
+              <td class="lab">
+                <strong>LAB</strong><br>
+                Programming
+              </td>
+
+              <td></td>
+
+              <td class="assignment">
+                <strong>ASSIGNMENT</strong><br>
+                Submission
+              </td>
+
+              <td></td>
+            </tr>
+
+            <tr>
+              <th>1:00 PM</th>
+
+              <td class="lecture">
+                <strong>LECTURE</strong><br>
+                Computer Science
+              </td>
+
+              <td></td>
+
+              <td class="lecture">
+                <strong>LECTURE</strong><br>
+                Computer Science
+              </td>
+
+              <td></td>
+
+              <td class="exam">
+                <strong>EXAM</strong><br>
+                Testing Center
+              </td>
+            </tr>
+
+            <tr>
+              <th>3:00 PM</th>
+
+              <td></td>
+
+              <td class="assignment">
+                <strong>ASSIGNMENT</strong><br>
+                Project Work
+              </td>
+
+              <td></td>
+
+              <td class="lab">
+                <strong>LAB</strong><br>
+                Computer Lab
+              </td>
+
+              <td></td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+
+        <div class="timetable-legend">
+
+          <h4>Activity Legend</h4>
+
+          <p>
+            <span class="legend-item lecture">LECTURE</span>
+            Instructor-led class session
+          </p>
+
+          <p>
+            <span class="legend-item lab">LAB</span>
+            Hands-on laboratory session
+          </p>
+
+          <p>
+            <span class="legend-item assignment">ASSIGNMENT</span>
+            Assignment or project work
+          </p>
+
+          <p>
+            <span class="legend-item exam">EXAM</span>
+            Examination or assessment
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CRITICAL THINKING -->
+
+    <section id="critical-thinking" class="card">
+
+      <h2>Critical Thinking Lab</h2>
+
+      <p>
+        The critical-thinking investigations document CSS
+        behavior using browser evidence, measurements, and
+        reflections.
+      </p>
+
+
+      <!-- UG01 -->
+
+      <h3>UG 01 — Forensic Cascade Reconstruction</h3>
+
+      <p>
+        <strong>Goal:</strong>
+        Determine which CSS selector wins when an element is
+        targeted by multiple competing selectors.
+      </p>
+
+      <div id="cascade-demo" class="cascade-demo">
+        Cascade test
+      </div>
+
+      <p>
+        <strong>Prediction:</strong>
+        The ID selector has higher specificity than the class
+        and element selectors and should determine the final color.
+      </p>
+
+      <p>
+        <strong>Specificity calculation:</strong>
+        The element selector contributes one type selector,
+        the class selector contributes one class selector,
+        and the ID selector contributes one ID selector.
+        Therefore the ID selector has the highest specificity.
+      </p>
+
+      <p>
+        <strong>Actual result:</strong>
+        Chrome DevTools reported the computed color as
+        <code>rgb(128, 0, 128)</code>, which is purple.
+        The ID selector was the winning declaration.
+      </p>
+
+      <figure>
+        <img
+          src="images/ug01-devtools.png"
+          alt="Chrome DevTools showing the computed purple color for the UG01 cascade test."
+          class="evidence-image">
+        <figcaption>
+          UG01 DevTools evidence showing the winning ID selector
+          and computed color rgb(128, 0, 128).
+        </figcaption>
+      </figure>
+
+
+      <!-- UG02 -->
+
+      <h3>UG 02 — Pixel Budget Under Constraint</h3>
+
+      <p>
+        <strong>Goal:</strong>
+        Render an element with an outer width of exactly
+        420px at a 900px viewport without declaring
+        <code>width: 420px</code>.
+      </p>
+
+      <div class="ug02-box">
+        UG02 Pixel Budget Test Box
+      </div>
+
+      <p>
+        <strong>Before arithmetic:</strong>
+        360px content + 20px left padding + 20px right padding
+        + 10px left border + 10px right border = 420px outer width.
+      </p>
+
+      <p>
+        <strong>After:</strong>
+        The box-sizing model was changed to
+        <code>border-box</code> and the width calculation was
+        adjusted using <code>calc()</code>.
+      </p>
+
+      <figure>
+        <img
+          src="images/ug02-before.png"
+          alt="UG02 before screenshot showing the box model measurement."
+          class="evidence-image">
+        <figcaption>
+          UG02 Before — box-model evidence at the required viewport.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/ug02-after.png"
+          alt="UG02 after screenshot showing the adjusted box model."
+          class="evidence-image">
+        <figcaption>
+          UG02 After — adjusted box-model evidence.
+        </figcaption>
+      </figure>
+
+
+      <!-- UG03 -->
+
+      <h3>UG 03 — Breakpoint Failure Study</h3>
+
+      <p>
+        <strong>Goal:</strong>
+        Identify a responsive breakpoint failure and repair
+        it with a media query.
+      </p>
+
+      <div class="ug03-demo">
+
+        <div class="ug03-item">
+          <strong>Item 1</strong>
+        </div>
+
+        <div class="ug03-item">
+          <strong>Item 2</strong>
+        </div>
+
+        <div class="ug03-item">
+          <strong>Item 3</strong>
+        </div>
+
+      </div>
+
+      <p>
+        <strong>Test:</strong>
+        The layout changes at the defined breakpoint.
+        The items are arranged horizontally above the breakpoint
+        and vertically at or below it.
+      </p>
+
+      <p>
+        <strong>Result:</strong>
+        The media query changes the layout based on viewport
+        width while preserving the desktop layout above the
+        breakpoint.
+      </p>
+
+      <figure>
+        <img
+          src="images/ug03-before.png"
+          alt="UG03 screenshot showing the responsive layout before the breakpoint."
+          class="evidence-image">
+        <figcaption>
+          UG03 Before — responsive layout before the breakpoint.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/ug03-after.png"
+          alt="UG03 screenshot showing the responsive layout after the breakpoint."
+          class="evidence-image">
+        <figcaption>
+          UG03 After — responsive layout after the breakpoint.
+        </figcaption>
+      </figure>
+
+
+      <!-- UG04 -->
+
+      <h3>UG 04 — Accessibility: Color Is Not the Message</h3>
+
+      <p>
+        <strong>Goal:</strong>
+        Audit one color-coded part of Exercise 5 and ensure
+        that its meaning remains understandable when color
+        is removed.
+      </p>
+
+      <p>
+        <strong>Color-coded states:</strong>
+        Lecture, Lab, Assignment, and Exam use different
+        background colors in the timetable.
+      </p>
+
+      <div class="ug04-accessibility">
+
+        <div class="accessibility-state lecture-state">
+          <strong>LECTURE</strong>
+          <span>Instructor-led class</span>
+        </div>
+
+        <div class="accessibility-state lab-state">
+          <strong>LAB</strong>
+          <span>Hands-on laboratory</span>
+        </div>
+
+        <div class="accessibility-state assignment-state">
+          <strong>ASSIGNMENT</strong>
+          <span>Project or assignment work</span>
+        </div>
+
+        <div class="accessibility-state exam-state">
+          <strong>EXAM</strong>
+          <span>Assessment or examination</span>
+        </div>
+
+      </div>
+
+      <p>
+        <strong>Non-color cue:</strong>
+        The state names and descriptive text carry the meaning,
+        so users do not need to distinguish the colors in order
+        to understand the timetable.
+      </p>
+
+
+      <h4>Contrast Testing</h4>
+
+      <p>
+        Two foreground/background combinations were selected
+        from the Exercise 5 timetable and measured using a
+        contrast checker.
+      </p>
+
+      <p>
+        <strong>Pair 1:</strong>
+        Foreground <code>#222222</code> on background
+        <code>#d9eaf7</code>.
+        Measured contrast ratio:
+        <strong>12.92:1</strong>
+      </p>
+
+      <p>
+        <strong>Pair 2:</strong>
+        Foreground <code>#222222</code> on background
+        <code>#fff2cc</code>.
+        Measured contrast ratio:
+        <strong>14.26:1</strong>
+      </p>
+
+
+      <h4>Grayscale Evidence</h4>
+
+      <p>
+        The timetable remains understandable when color is
+        removed because each activity includes a visible text
+        label such as LECTURE, LAB, ASSIGNMENT, or EXAM.
+      </p>
+
+      <figure>
+        <img
+          src="images/ug04-grayscale.png"
+          alt="Grayscale screenshot of the Exercise 5 timetable showing that activity states remain understandable without color."
+          class="evidence-image">
+        <figcaption>
+          UG04 grayscale evidence showing that timetable meanings
+          remain understandable without relying on color.
+        </figcaption>
+      </figure>
+
+
+      <h4>Peer Interpretation</h4>
+
+      <p>
+        A peer reviewed the grayscale version and confirmed that
+        the activity types remain understandable because each
+        state has a clear text label and description.
+        Peer initials:
+        <strong>YOUR_PEER_INITIALS</strong>
+      </p>
+
+
+      <!-- GR01 -->
+
+      <h3>GR 01 — CSS Architecture</h3>
+
+      <p>
+        <strong>Goal:</strong>
+        Compare a utility-oriented CSS architecture with a
+        component-oriented architecture for the same Exercise 5
+        timetable.
+      </p>
+
+
+      <h4>Evaluation Criteria</h4>
+
+      <ol>
+        <li>
+          <strong>Maintainability:</strong>
+          how easy the CSS is to modify and maintain.
+        </li>
+
+        <li>
+          <strong>Reusability:</strong>
+          how easily styles can be reused across elements.
+        </li>
+
+        <li>
+          <strong>Readability:</strong>
+          how easily another developer can understand the CSS.
+        </li>
+      </ol>
+
+
+      <h4>Architecture A — Utility-Oriented</h4>
+
+      <p>
+        The utility-oriented architecture uses small reusable
+        classes that each perform a focused styling function.
+        Multiple utility classes can be combined on the same element.
+      </p>
+
+      <pre><code>.text-center {
+  text-align: center;
+}
+
+.padding-small {
+  padding: 8px;
+}
+
+.border {
+  border: 1px solid #333333;
+}
+
+.bg-primary {
+  background-color: #1f4e79;
+  color: white;
+}</code></pre>
+
+
+      <h4>Architecture B — Component-Oriented</h4>
+
+      <p>
+        The component-oriented architecture groups CSS according
+        to complete interface components and their semantic roles.
+        Each component class describes the part of the interface
+        being styled.
+      </p>
+
+      <pre><code>.school-timetable {
+  background-color: #f5f7fa;
+  padding: 20px;
+  border: 2px solid #333333;
+}
+
+.timetable-lecture {
+  background-color: #d9eaf7;
+}
+
+.timetable-lab {
+  background-color: #dff0d8;
+}
+
+.timetable-assignment {
+  background-color: #fff2cc;
+}
+
+.timetable-exam {
+  background-color: #f4cccc;
+}</code></pre>
+
+
+      <h4>Architecture Measurement</h4>
+
+      <table>
+
+        <caption>CSS Architecture Comparison</caption>
+
+        <thead>
+          <tr>
+            <th>Measurement</th>
+            <th>Utility-Oriented</th>
+            <th>Component-Oriented</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <th>Selectors</th>
+            <td>4</td>
+            <td>5</td>
+          </tr>
+
+          <tr>
+            <th>Declarations</th>
+            <td>5</td>
+            <td>8</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+
+      <h4>Architecture Comparison</h4>
+
+      <table>
+
+        <caption>Evaluation of the Two Architectures</caption>
+
+        <thead>
+          <tr>
+            <th>Criterion</th>
+            <th>Utility-Oriented</th>
+            <th>Component-Oriented</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <th>Maintainability</th>
+
+            <td>
+              Small focused classes can be reused, but changes
+              to utility combinations may require editing many
+              HTML elements.
+            </td>
+
+            <td>
+              Component styles are grouped together, making
+              changes to a particular interface component
+              easier to locate.
+            </td>
+          </tr>
+
+          <tr>
+            <th>Reusability</th>
+
+            <td>
+              Utilities are highly reusable because each class
+              performs a small styling function.
+            </td>
+
+            <td>
+              Components can be reused when the same type of
+              interface component appears elsewhere.
+            </td>
+          </tr>
+
+          <tr>
+            <th>Readability</th>
+
+            <td>
+              Multiple utility classes can make HTML class
+              attributes longer and harder to interpret.
+            </td>
+
+            <td>
+              Component names communicate the purpose of the
+              interface element directly.
+            </td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+
+      <h4>Version-History Evidence</h4>
+
+      <p>
+        The project version history was used to document the
+        CSS architecture work and provide a record of the
+        changes made during the comparison.
+      </p>
+
+      <figure>
+        <img
+          src="images/gr01-version-history.png"
+          alt="Git version history showing the GR01 CSS architecture comparison work."
+          class="evidence-image">
+        <figcaption>
+          GR01 version-history evidence.
+        </figcaption>
+      </figure>
+
+
+      <h4>Selected Architecture</h4>
+
+      <p>
+        The component-oriented architecture was selected for
+        this timetable because the CSS is organized around
+        recognizable interface components and semantic activity
+        states. This makes the stylesheet easier to read and
+        makes component-specific changes easier to locate.
+      </p>
+
+
+      <p>
+        <strong>Acknowledged disadvantage:</strong>
+        The component-oriented approach can require more
+        selectors and more CSS declarations when many individual
+        components need separate styling.
+      </p>
+
+
+      <h4>CSS Naming Decision</h4>
+
+      <p>
+        The class name <code>.school-timetable</code> was chosen
+        because it describes the complete timetable component
+        rather than describing only a visual property. This makes
+        the purpose of the class understandable when reading
+        the stylesheet.
+      </p>
+
+
+      <!-- GR02 -->
+
+      <h3>GR 02 — Experimental Design</h3>
+
+      <p>
+        <strong>Goal:</strong>
+        Design a repeatable browser experiment comparing the
+        rendering cost of two visually equivalent CSS
+        implementations.
+      </p>
+
+
+      <h4>Falsifiable Claim</h4>
+
+      <p>
+        The experiment will test whether one implementation
+        produces a different measured rendering cost than
+        the other under controlled browser conditions.
+      </p>
+
+
+      <h4>Controlled Variables</h4>
+
+      <ol>
+        <li>Browser and browser version</li>
+        <li>Viewport dimensions</li>
+        <li>Hardware and active test page</li>
+      </ol>
+
+
+      <h4>Measurement Plan</h4>
+
+      <p>
+        Each CSS implementation will be tested five times.
+        Raw measurements will be recorded and the median of
+        each set of five trials will be calculated.
+      </p>
+
+
+      <table class="experiment-table">
+
+        <caption>GR02 Raw Measurements</caption>
+
+        <thead>
+          <tr>
+            <th>Trial</th>
+            <th>Implementation A</th>
+            <th>Implementation B</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <th>1</th>
+            <td>To measure</td>
+            <td>To measure</td>
+          </tr>
+
+          <tr>
+            <th>2</th>
+            <td>To measure</td>
+            <td>To measure</td>
+          </tr>
+
+          <tr>
+            <th>3</th>
+            <td>To measure</td>
+            <td>To measure</td>
+          </tr>
+
+          <tr>
+            <th>4</th>
+            <td>To measure</td>
+            <td>To measure</td>
+          </tr>
+
+          <tr>
+            <th>5</th>
+            <td>To measure</td>
+            <td>To measure</td>
+          </tr>
+
+          <tr>
+            <th>Median</th>
+            <td>To calculate</td>
+            <td>To calculate</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+
+      <p>
+        <strong>Interpretation:</strong>
+        The result will be interpreted only after five trials
+        have been collected for each implementation.
+      </p>
+
+      <p>
+        <strong>Environment:</strong>
+        Record browser version, operating system, viewport size,
+        hardware conditions, and other relevant test details.
+      </p>
+
+      <p>
+        <strong>Instructor rerun:</strong>
+        The experiment must be repeatable during the live defense.
+      </p>
+
+    </section>
+
+
+    <!-- EVIDENCE -->
+
+    <section id="evidence" class="card">
+
+      <h2>Evidence</h2>
+
+      <ul>
+
+        <li>
+          <strong>UG01:</strong>
+          <code>images/ug01-devtools.png</code>
+        </li>
+
+        <li>
+          <strong>UG02 Before:</strong>
+          <code>images/ug02-before.png</code>
+        </li>
+
+        <li>
+          <strong>UG02 After:</strong>
+          <code>images/ug02-after.png</code>
+        </li>
+
+        <li>
+          <strong>UG03 Before:</strong>
+          <code>images/ug03-before.png</code>
+        </li>
+
+        <li>
+          <strong>UG03 After:</strong>
+          <code>images/ug03-after.png</code>
+        </li>
+
+        <li>
+          <strong>UG04:</strong>
+          <code>images/ug04-accessibility.png</code>
+        </li>
+
+        <li>
+          <strong>UG04 Grayscale:</strong>
+          <code>images/ug04-grayscale.png</code>
+        </li>
+
+        <li>
+          <strong>GR01 Version History:</strong>
+          <code>images/gr01-version-history.png</code>
+        </li>
+
+        <li>
+          <strong>GR02:</strong>
+          Raw performance measurements to be added.
+        </li>
+
+      </ul>
+
+    </section>
+
+
+    <!-- SOURCES -->
+
+    <section id="sources" class="card">
+
+      <h2>Sources</h2>
+
+      <ul>
+        <li>MDN Web Docs — CSS</li>
+        <li>MDN Web Docs — CSS Selectors</li>
+        <li>MDN Web Docs — CSS Box Model</li>
+        <li>MDN Web Docs — Responsive Design</li>
+        <li>MDN Web Docs — CSS Tables</li>
+        <li>MDN Web Docs — CSS Accessibility</li>
+      </ul>
+
+      <p>
+        <strong>Assistance statement:</strong>
+        This submission was developed with AI assistance for
+        explanation, debugging, organization, and clarification
+        of CSS concepts. The student performed the implementation,
+        testing, and verification of the work.
+      </p>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+
+    <p>
+      Bhattacharjee, Sattwik — Georgia State University
+    </p>
+
+    <p>
+      Web Programming — CW03 CSS Foundations Lab
+    </p>
+
+  </footer>
+
+</body>
+</html>

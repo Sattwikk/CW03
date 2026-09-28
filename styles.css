@@ -1,0 +1,453 @@
+/* =========================================================
+   CW 03 — CSS Foundations Lab
+   Main Stylesheet
+   ========================================================= */
+
+/* =========================================================
+   CSS VARIABLES
+   ========================================================= */
+
+:root {
+  --navy: #17324d;
+  --blue: #285f8f;
+  --light: #f4f7fa;
+  --border: #cbd5df;
+  --text: #20252b;
+  --accent: #8b1e3f;
+  --gold: #b8860b;
+}
+
+
+/* =========================================================
+   GLOBAL STYLES
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--light);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 1.5rem auto;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+  background: var(--navy);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.toc {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0.75rem;
+
+  background: white;
+  border-bottom: 1px solid var(--border);
+}
+
+.toc a {
+  color: var(--navy);
+  font-weight: bold;
+  text-decoration: none;
+
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.4rem;
+}
+
+.toc a:hover,
+.toc a:focus {
+  background: #e6eef5;
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   GENERAL CONTENT CARDS
+   ========================================================= */
+
+.card {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  color: var(--navy);
+
+  border-bottom: 2px solid var(--blue);
+  padding-bottom: 0.4rem;
+}
+
+
+/* =========================================================
+   CODE BLOCKS
+   ========================================================= */
+
+pre {
+  overflow-x: auto;
+
+  padding: 1rem;
+
+  color: #f7f7f7;
+  background: #1f2933;
+
+  border-radius: 0.5rem;
+}
+
+code {
+  font-family: "SFMono-Regular", Consolas, monospace;
+}
+
+
+/* =========================================================
+   EXERCISE 1 — EXTERNAL STYLE SHEET
+   ========================================================= */
+
+.exercise1-demo {
+  color: darkred;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   EXERCISE 2 — DEBUGGING ANALYSIS
+   ========================================================= */
+
+.debug-analysis {
+  padding: 1.25rem;
+
+  color: #24303b;
+  background: #fff7df;
+
+  border: 2px solid #c59b35;
+  border-radius: 0.75rem;
+
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+}
+
+.debug-analysis article {
+  margin: 1rem 0;
+  padding: 1rem;
+
+  background: white;
+
+  border-left: 5px solid var(--accent);
+}
+
+.debug-analysis h4 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+
+/* =========================================================
+   EXERCISE 3 — SONG LYRICS
+   ========================================================= */
+
+.lyrics-card {
+  background: chocolate;
+  color: ivory;
+}
+
+.lyrics-card h2,
+.lyrics-card h3 {
+  color: ivory;
+}
+
+.lyrics {
+  padding: 1.25rem;
+
+  border-radius: 0.75rem;
+
+  background: rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========================================================
+   EXERCISE 5 — SCHOOL WEBSITE
+   ========================================================= */
+
+.school-site {
+  --school-primary: #17324d;
+  --school-secondary: #dfeaf3;
+  --school-border: #7b8c9c;
+
+  border: 2px solid var(--school-primary);
+  border-radius: 0.75rem;
+
+  overflow: hidden;
+
+  background: white;
+}
+
+.school-site > header {
+  padding: 1rem;
+
+  color: white;
+  background: var(--school-primary);
+}
+
+.school-site nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  padding: 0.75rem 1rem;
+
+  background: var(--school-secondary);
+}
+
+.school-site nav a {
+  color: var(--school-primary);
+  font-weight: bold;
+}
+
+.school-site main {
+  width: auto;
+  margin: 0;
+  padding: 1rem;
+}
+
+
+/* =========================================================
+   TIMETABLE
+   ========================================================= */
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+th,
+td {
+  padding: 0.75rem;
+
+  border: 1px solid var(--school-border);
+
+  text-align: center;
+}
+
+thead th {
+  color: white;
+  background: var(--school-primary);
+}
+
+tbody th {
+  background: #eef2f5;
+}
+
+
+/* Different timetable activity types */
+
+.class-activity {
+  background: #dbeafe;
+}
+
+.study-activity {
+  background: #dcfce7;
+}
+
+.project-activity {
+  background: #fef3c7;
+}
+
+
+/* =========================================================
+   UG01 — FORENSIC CASCADE RECONSTRUCTION
+   ========================================================= */
+
+/*
+   IMPORTANT:
+   These are the three competing rules required by UG01.
+
+   1. Element selector
+      div
+
+   2. Class selector
+      .cascade-demo
+
+   3. ID selector
+      #cascade-demo
+
+   The ID selector has the highest specificity.
+*/
+
+div {
+  color: green;
+}
+
+.cascade-demo {
+  color: blue;
+}
+
+#cascade-demo {
+  color: purple;
+}
+
+
+/* =========================================================
+   EVIDENCE IMAGES
+   ========================================================= */
+
+.evidence-image {
+  display: block;
+
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+
+  margin: 1rem auto;
+
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   EVIDENCE PLACEHOLDER
+   ========================================================= */
+
+.evidence-placeholder {
+  min-height: 140px;
+
+  display: grid;
+  place-items: center;
+
+  margin: 1rem 0;
+
+  border: 2px dashed #8a99a8;
+
+  background: #f8fafc;
+  color: #52606d;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+  padding: 1.5rem;
+
+  color: white;
+  background: var(--navy);
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  main {
+    width: min(100% - 1rem, 1100px);
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .toc {
+    position: static;
+  }
+
+  th,
+  td {
+    min-width: 120px;
+  }
+
+}
+/* =====================================================
+   UG02 — Pixel Budget Under Constraint
+   ===================================================== */
+
+.ug02-box {
+  width: calc(100% + 20px);
+  padding: 20px;
+  border: 10px solid black;
+  box-sizing: border-box;
+}
+/* =====================================================
+   UG03 — Breakpoint Failure Study
+   ===================================================== */
+
+.ug03-demo {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border: 3px solid black;
+}
+
+.ug03-item {
+  flex: 1;
+  padding: 30px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .ug03-demo {
+    display: block;
+  }
+
+  .ug03-item {
+    margin-bottom: 10px;
+  }
+}
